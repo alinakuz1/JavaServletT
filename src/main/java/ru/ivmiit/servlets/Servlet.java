@@ -11,6 +11,7 @@ public class Servlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        //при переходе на http://localhost:8080/servlet_example_war/hello выводим строки ниже
         PrintWriter writer = response.getWriter();
         writer.write("<h1>Hello</h1>");
         writer.write("<h2>(-_-)</h2>");
